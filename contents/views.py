@@ -56,7 +56,7 @@ class PostDetailView(MethodView):
       new_comment = Comment(
         post_slug=post.slug,
         name=name,
-        email=email
+        email=email,
         message=message
       )
       db.session.add(new_comment)
