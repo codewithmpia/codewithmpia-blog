@@ -51,10 +51,12 @@ class PostDetailView(MethodView):
 
     if form.validate_on_submit():
       name = form.name.data
+      email = form.email.data
       message = form.message.data
       new_comment = Comment(
         post_slug=post.slug,
         name=name,
+        email=email
         message=message
       )
       db.session.add(new_comment)

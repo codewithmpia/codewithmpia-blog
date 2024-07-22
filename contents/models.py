@@ -37,6 +37,7 @@ class Comment(db.Model):
   post_slug = db.Column(db.String(255), db.ForeignKey("posts.slug"))
   id = db.Column(db.Integer(), primary_key=True)
   name = db.Column(db.String(100), nullable=False)
+  email = db.Column(db.String(100), nullable=False)
   message = db.Column(db.Text(), nullable=False)
   created_at = db.Column(db.DateTime(), default=datetime.now(timezone.utc))
   active = db.Column(db.Boolean(), default=True)
