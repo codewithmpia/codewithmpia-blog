@@ -2,6 +2,8 @@
 
 Bienvenue sur le dépôt GitHub de mon blog personnel ! Dans ce dépôt, vous trouverez le code source et les ressources nécessaires utlisées pour coder codewithmpia.
 
+Vous pouvez visitez ce blog ici: [codewithmpia](https://codewithmpia.pythonanywhere.com/)
+
 ## Aperçu
 
 ![Capture d'écran de la page d'accueil](/contents/assets/static/images/screenshots/screenshot-lg.png)
