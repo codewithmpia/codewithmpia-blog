@@ -47,7 +47,7 @@ DEV_DB = f"sqlite:///{BASE_DIR}/db.sqlite3"
 5. Exécutez l'application Flask en utilisant la commande suivante :
 ```python run_app.py 
 ```
-7. Accédez à `http://localhost:5000` dans votre navigateur web pour afficher codewithmpia.
+6. Accédez à `http://localhost:5000` dans votre navigateur web pour afficher codewithmpia.
 
 ## Déploiement
 
