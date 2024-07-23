@@ -13,7 +13,7 @@ class CommentForm(FlaskForm):
     validators=[DataRequired(message="Le nom est obligatoire")])
   email = EmailField(label="Votre email", 
           validators=[DataRequired(message="L'email est obligatoire"),
-                      Email(message="L'email n'est pas valide")])
+                      Email(message="L'adresse email n'est pas valide")])
   message = TextAreaField(
     label="Votre message",
     validators=[DataRequired(message="Le message est obligatoire")]

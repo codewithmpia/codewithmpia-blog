@@ -47,6 +47,7 @@ class PostDetailView(MethodView):
 
   def post(self, slug):
     post = Post.query.filter_by(publish=True, slug=slug).first_or_404()
+    comments = Comment.query.filter_by(post_slug=post.slug, active=True)
     form = self.form_class()
 
     if form.validate_on_submit():
@@ -65,5 +66,5 @@ class PostDetailView(MethodView):
       return redirect(url_for("detail", slug=post.slug))
     elif form.errors:
       get_form_errors(form)
-    return render_template(self.template_name, post=post, form=form)
+    return render_template(self.template_name, post=post, form=form, comments=comments)
   
